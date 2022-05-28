@@ -28,10 +28,18 @@ namespace uTorrent {
 	class BencodeParser {
 
 		public:
+			/*!
+			 * @brief BencodeParser() explicit constructor.
+			 */
 			explicit BencodeParser();
 
 			~BencodeParser();
 
+			/*!
+			 * @brief parse
+			 * @param content
+			 * @return
+			 */
 			bool parse(const QByteArray &content);
 
 			QString errorString() const;
