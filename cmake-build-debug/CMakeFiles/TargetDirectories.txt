@@ -1,0 +1,6 @@
+C:/Users/hedar/OneDrive/Desktop/C++/Networking/uTorrent/cmake-build-debug/CMakeFiles/uTorrent.dir
+C:/Users/hedar/OneDrive/Desktop/C++/Networking/uTorrent/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/hedar/OneDrive/Desktop/C++/Networking/uTorrent/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/hedar/OneDrive/Desktop/C++/Networking/uTorrent/cmake-build-debug/src/CMakeFiles/SOURCE_LIBRARY.dir
+C:/Users/hedar/OneDrive/Desktop/C++/Networking/uTorrent/cmake-build-debug/src/CMakeFiles/edit_cache.dir
+C:/Users/hedar/OneDrive/Desktop/C++/Networking/uTorrent/cmake-build-debug/src/CMakeFiles/rebuild_cache.dir

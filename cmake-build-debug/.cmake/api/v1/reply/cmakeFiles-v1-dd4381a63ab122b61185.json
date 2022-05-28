@@ -1,0 +1,552 @@
+{
+	"inputs" : 
+	[
+		{
+			"path" : "CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/3.22.3/CMakeSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2021.3.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/3.22.3/CMakeCCompiler.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/3.22.3/CMakeCXXCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2021.3.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2021.3.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeGenericSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2021.3.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2021.3.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2021.3.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/WindowsPaths.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2021.3.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2021.3.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2021.3.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2021.3.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2021.3.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2021.3.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2021.3.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/3.22.3/CMakeRCCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2021.3.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeRCInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2021.3.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-windres.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2021.3.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-C-ABI.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2021.3.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2021.3.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2021.3.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2021.3.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2021.3.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2021.3.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2021.3.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2021.3.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Windows-GNU-CXX-ABI.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2021.3.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"path" : "CMakeModules/WinQtDeploy.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Core/Qt5CoreConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Core/Qt5CoreMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2021.3.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeParseArguments.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QWebGLIntegrationPlugin.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsIntegrationPlugin.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Widgets/Qt5Widgets_QWindowsVistaStylePlugin.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2021.3.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeParseArguments.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Network/Qt5NetworkConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Network/Qt5NetworkConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Network/Qt5Network_QGenericEnginePlugin.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Test/Qt5TestConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Test/Qt5TestConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Test/Qt5TestConfigExtras.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Sql/Qt5SqlConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Sql/Qt5SqlConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Sql/Qt5Sql_QODBCDriverPlugin.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Sql/Qt5Sql_QPSQLDriverPlugin.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Sql/Qt5Sql_QSQLiteDriverPlugin.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Xml/Qt5XmlConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Xml/Qt5XmlConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5LinguistTools/Qt5LinguistToolsConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5LinguistTools/Qt5LinguistToolsConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5LinguistTools/Qt5LinguistToolsMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2021.3.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeParseArguments.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Designer/Qt5DesignerConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Designer/Qt5DesignerConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5UiPlugin/Qt5UiPluginConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5UiPlugin/Qt5UiPluginConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Designer/Qt5Designer_QAxWidgetPlugin.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Designer/Qt5Designer_QQuickWidgetPlugin.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Designer/Qt5Designer_QWebEngineViewPlugin.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Concurrent/Qt5ConcurrentConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Concurrent/Qt5ConcurrentConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5OpenGL/Qt5OpenGLConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5OpenGL/Qt5OpenGLConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Charts/Qt5ChartsConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Charts/Qt5ChartsConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5WebEngineWidgets/Qt5WebEngineWidgetsConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5WebEngineWidgets/Qt5WebEngineWidgetsConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5WebEngineCore/Qt5WebEngineCoreConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5WebEngineCore/Qt5WebEngineCoreConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Quick/Qt5QuickConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Quick/Qt5QuickConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5QmlModels/Qt5QmlModelsConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5QmlModels/Qt5QmlModelsConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Qml/Qt5QmlConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Qml/Qt5QmlConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Qml/Qt5Qml_QDebugMessageServiceFactory.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Qml/Qt5Qml_QLocalClientConnectionFactory.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Qml/Qt5Qml_QQmlDebugServerFactory.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Qml/Qt5Qml_QQmlDebuggerServiceFactory.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Qml/Qt5Qml_QQmlInspectorServiceFactory.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Qml/Qt5Qml_QQmlNativeDebugConnectorFactory.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Qml/Qt5Qml_QQmlNativeDebugServiceFactory.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Qml/Qt5Qml_QQmlPreviewServiceFactory.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Qml/Qt5Qml_QQmlProfilerServiceFactory.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Qml/Qt5Qml_QQuickProfilerAdapterFactory.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Qml/Qt5Qml_QTcpServerConnectionFactory.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Qml/Qt5QmlConfigExtras.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Quick/Qt5Quick_QSGD3D12Adaptation.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5WebChannel/Qt5WebChannelConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5WebChannel/Qt5WebChannelConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Positioning/Qt5PositioningConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Positioning/Qt5PositioningConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Positioning/Qt5Positioning_QGeoPositionInfoSourceFactoryPoll.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Positioning/Qt5Positioning_QGeoPositionInfoSourceFactorySerialNmea.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Positioning/Qt5Positioning_QGeoPositionInfoSourceFactoryWinRT.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5PrintSupport/Qt5PrintSupportConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5PrintSupport/Qt5PrintSupportConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5PrintSupport/Qt5PrintSupport_QWindowsPrinterSupportPlugin.cmake"
+		},
+		{
+			"path" : "resources.qrc"
+		},
+		{
+			"path" : "src/CMakeLists.txt"
+		}
+	],
+	"kind" : "cmakeFiles",
+	"paths" : 
+	{
+		"build" : "C:/Users/hedar/OneDrive/Desktop/C++/Networking/uTorrent/cmake-build-debug",
+		"source" : "C:/Users/hedar/OneDrive/Desktop/C++/Networking/uTorrent"
+	},
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}
