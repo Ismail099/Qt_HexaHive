@@ -10,9 +10,12 @@
 #define UTORRENT_METAINFORMATION_H
 
 
+#include <Exceptions/UnImplementedException.hpp>
+
 #include <QByteArray>
 #include <QDateTime>
 #include <QList>
+#include <QMap>
 #include <QString>
 #include <QStringList>
 #include <QVariant>
@@ -20,7 +23,7 @@
 
 namespace uTorrent {
 	/*!
-	 * @brief MetaInfoSingleFile    A struct represents a file structure of a torrent file.
+	 * @brief MetaInfoSingleFile is a struct that represents a file structure of a torrent file.
 	 */
 	struct MetaInfoSingleFile {
 		qint64 length;              // size of the file in bytes.
@@ -38,6 +41,9 @@ namespace uTorrent {
 	};
 
 
+	/*!
+	 * @brief class MetaInformation represents the meta information of torrent files.
+	 **/
 	class MetaInformation {
 
 		public:
@@ -46,66 +52,117 @@ namespace uTorrent {
 				MultiFileForm,
 			};
 
+
+			/*!
+			 * @brief MetaInformation() an explicit constructor.
+			 **/
 			explicit MetaInformation();
 
+
+			/*!
+			 * @brief clear() member function which clears the meta-information.
+			 **/
 			void clear();
+
 
 			/*!
 			 * @brief parse     Parse function of the metadata of the torrent files.
 			 * @param data      Data of the file to be parsed.
 			 * @return          const QString&
-			 */
+			 **/
 			bool parse(const QByteArray &data);
 
-			/*!
-			 * @brief errorString       Getter function of the error string.
-			 * @return                  const QString&
-			 */
-			const QString &errorString() const;
 
+			/*!
+			 * @brief errorString getter function of the error string.
+			 * @return constant reference of QString.
+			 **/
+			const QString &errorString();
+
+
+			/*!
+			 * @brief infoValue()
+			 * @return
+			 **/
 			QByteArray infoValue() const;
 
+
+			/*!
+			 * @brief announceUrl Getter of the tracker's url.
+			 * @return url as a string
+			 **/
 			QString announceUrl() const;
 
+
+			/*!
+			 * @brief fileForm Getter of File Form.
+			 * @return
+			 */
+			FileForm fileForm() const;
+
+
+			/*!
+			 * @brief announceList Returns a list of tracker urls.
+			 * @return list of string.
+			 **/
 			QStringList announceList() const;
 
+
+			/*!
+			 * @brief creationDate
+			 * @return
+			 */
 			QDateTime creationDate() const;
 
+
+			/*!
+			 * @brief comment
+			 * @return
+			 */
 			QString comment() const;
 
+
+			/*!
+			 * @brief
+			 * @return
+			 */
 			QString createdBy() const;
 
 			/*!
-			 * @brief singleFile    Getter function of the metadata of a single torrent file.
-			 * @return              MetaInfoSingleFile
-			 */
+			 * @brief singleFile getter function of the metadata of a single torrent file.
+			 * @return MetaInfoSingleFile.
+			 **/
 			MetaInfoSingleFile singleFile() const;
 
 			/*!
-			 * @brief multiFiles    Getter function of the metadata of multiple torrent files.
-			 * @return              QList<MetaInfoMultiFile>
-			 */
+			 * @brief multiFiles getter function of the metadata of multiple torrent files.
+			 * @return List of MetaInfoMultiFile.
+			 **/
 			QList<MetaInfoMultiFile> multiFiles() const;
 
 			/*!
-			 * @brief name      Getter function of the metadata name.
-			 * @return          QString
-			 */
+			 * @brief name getter function of the metadata name.
+			 * @return QString.
+			 **/
 			QString name() const;
 
 			/*!
 			 * @brief pieceLength   Getter function of the piece length.
 			 * @return              int
-			 */
+			 **/
 			int pieceLength() const;
 
 
+			/*!
+			 * @brief the checksum with SHA-3 hash algorithm.
+			 * @return List of Byte arrays.
+			 **/
 			QList<QByteArray> sha3Sums() const;
 
 			/*!
-			 * @brief totalSize     Total size of the metadata.
-			 * @return              64 bit integer
-			 */
+			 * @brief totalSize total size of the metadata.
+			 * @return 64 bit integer
+			 **/
 			qint64 totalSize() const;
 
 		private:

@@ -5,10 +5,12 @@
  * @brief       Bencode Parser.
  * @details     Bencode is the encoding used by the peer-to-peer file sharing system BitTorrent for storing and
  *              transmitting loosely structured data. It is most commonly used in torrent files.
- */
-#include "BencodeParser.h"
+ **/
+#include <BencodeParser.h>
+
 
 namespace uTorrent {
+
 	//
 	// Constructor
 	//
@@ -32,7 +34,7 @@ namespace uTorrent {
 			return false;
 		}
 
-		this->_Content = content;
+		_Content = content;
 		_Index = 0;
 		_InfoStart = 0;
 		_InfoLength = 0;
@@ -70,25 +72,32 @@ namespace uTorrent {
 		const int contentSize = _Content.size();
 		int size = -1;
 
-		while (++_Index < contentSize) {
+		do {
 			char character = _Content.at(_Index);
+
+			// If character is less than 0 and greater than 9
 			if (character < '0' || character > '9') {
 				if (size == -1) {
 					return false;
 				}
+
+				// Missing colon between size and content
 				if (character != ':') {
 					_ErrorString = QString("Unexpected character at post %1: %2").arg(_Index, character);
 					return false;
 				}
+
 				++_Index;
 				break;
 			}
+
+			// negative size
 			if (size == -1) {
 				size = 0;
 			}
 			size *= 10;
 			size += character - '0';
-		}
+		} while (++_Index < contentSize);
 
 		if (byteString) {
 			*byteString = _Content.mid(_Index, size);
@@ -105,25 +114,34 @@ namespace uTorrent {
 	bool BencodeParser::getInteger(qint64 *integer) {
 		const int contentSize = _Content.size();
 
+		// Invalid syntax if it doesn't start with an 'i' (not an integer)
 		if (_Content.at(_Index) != 'i') {
 			return false;
 		}
 
+		// Else increment the index
 		++_Index;
 		qint64 num = -1;
 		bool negative = false;
 
+		// Iterate the value
 		while (++_Index < contentSize) {
+			// Take a character
 			char character = _Content.at(_Index);
 
+			// If character is less than 0 and greater than 9
 			if (character < '0' || character > '9') {
+
+				// If integer is negative
 				if (num == -1) {
+
 					if (character != '-' || negative) {
 						return false;
 					}
 					negative = true;
 					continue;
 				} else {
+					// If value is not ended with an 'e', syntax error.
 					if (character != 'e') {
 						_ErrorString = QString("Unexpected character at pos %1: %2").arg(_Index, character);
 						return false;
@@ -153,17 +171,18 @@ namespace uTorrent {
 	// Getter function of the list format in bencode.
 	//
 	bool BencodeParser::getList(QList<QVariant> *list) {
-
 		const int contentSize = _Content.size();
-		if (_Content.at(_Index) != 'l') {
+
+		// If it doesn't start with an 'l' (not a list)
+		if (_Content.at(_Index) != 'l')
 			return false;
-		}
 
 		QList<QVariant> tmp;
 		++_Index;
 
-		while (_Index < contentSize) {
+		do {
 
+			// Index is at the end of the string
 			if (_Content.at(_Index) == 'e') {
 				++_Index;
 				return false;
@@ -174,6 +193,7 @@ namespace uTorrent {
 			QList<QVariant> tmpList;
 			Dictionary dictionary;
 
+			// Parse integers, byte strings, lists and dictionaries.
 			if (getInteger(&number)) {
 				tmp << number;
 			} else if (getByteString(&byteString)) {
@@ -186,7 +206,7 @@ namespace uTorrent {
 				_ErrorString = QString("Error at index %1").arg(_Index);
 				return false;
 			}
-		}
+		} while (_Index < contentSize);
 
 		if (list) {
 			*list = tmp;
@@ -195,9 +215,15 @@ namespace uTorrent {
 		return true;
 	}
 
+
+	//
+	// Getter function of the dictionary format in bencode.
+	//
 	bool BencodeParser::getDictionary(QMap<QByteArray, QVariant> *dictionary) {
 
 		const int contentSize = _Content.size();
+
+		// If content doesn't start with a 'd' (not a dictionary), return false
 		if (_Content.at(_Index) != 'd') {
 			return false;
 		}
@@ -205,13 +231,15 @@ namespace uTorrent {
 		Dictionary tmpDict;
 		++_Index;
 
-		while (_Index < contentSize) {
+		do {
 
+			// Index is at the end of the string
 			if (_Content.at(_Index) == 'e') {
 				++_Index;
 				break;
 			}
 
+			// Try to get byte string
 			QByteArray key;
 			if (!getByteString(&key)) {
 				break;
@@ -226,6 +254,7 @@ namespace uTorrent {
 			QList<QVariant> tmpList;
 			QMap<QByteArray, QVariant> tmpDictionary;
 
+			// Parse integers, byte strings, lists and dictionaries.
 			if (getInteger(&number)) {
 				tmpDict.insert(key, number);
 			} else if (getByteString(&byteString)) {
@@ -242,7 +271,7 @@ namespace uTorrent {
 			if (key == "info") {
 				_InfoLength = _Index - _InfoStart;
 			}
-		}
+		} while (_Index < contentSize);
 
 		if (dictionary) {
 			*dictionary = tmpDict;

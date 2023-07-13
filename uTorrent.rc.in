@@ -1,0 +1,36 @@
+// @OWN_NAME@.rc.in
+
+#include <winresrc.h>
+
+IDI_ICON1              ICON    "logo_symbol_top.ico"
+
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION @uTorrent_MAJOR_VERSION@,@uTorrent_MINOR_VERSION@,@uTorrent_PATCH_VERSION@,@uTorrent_REVISION@
+PRODUCTVERSION @uTorrent_MAJOR_VERSION@,@uTorrent_MINOR_VERSION@,@uTorrent_PATCH_VERSION@,@uTorrent_REVISION@
+BEGIN
+BLOCK
+"StringFileInfo"
+BEGIN
+BLOCK
+"040904E4"
+BEGIN
+VALUE
+"CompanyName", "Ibo LLC"
+VALUE "FileDescription", "uTorrent, Torrent Client and Server Software"
+VALUE "FileVersion", "@uTorrent_MAJOR_VERSION@.@uTorrent_MINOR_VERSION@.@uTorrent_PATCH_VERSION@.@uTorrent_REVISION@\0"
+VALUE "InternalName", "uTorrent"
+VALUE "Author", "(c) Haidar Ibo <HaidarIbo@protonmail.com>, 2023"
+VALUE "LegalCopyright", "Haidar Ibo"
+VALUE "OriginalFilename", "uTorrent.exe"
+VALUE "ProductName", "uTorrent"
+VALUE "ProductVersion", "@uTorrent_MAJOR_VERSION@,@uTorrent_MINOR_VERSION@,@uTorrent_PATCH_VERSION@,@uTorrent_REVISION@\0"
+VALUE "Language", "English (United States)"
+END
+
+END
+BLOCK "VarFileInfo"
+BEGIN
+VALUE "Translation", 0x0409, 1252
+END
+END

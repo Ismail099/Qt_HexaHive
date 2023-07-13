@@ -42,17 +42,33 @@ namespace uTorrent {
 			 */
 			bool parse(const QByteArray &content);
 
-			QString errorString() const;
-
-			Dictionary dictionary() const;
 
 			/*!
-			 * @brief infoSection       Getter function of all the data contained in the information section.
-			 * @return                  QByteArray
+			 * @brief errorString Getter of the error string.
+			 * @return Constant QString object.
+			 */
+			QString errorString() const;
+
+
+			/*!
+			 * @brief dictionary Getter of dictionary.
+			 * @return
+			 */
+			Dictionary dictionary() const;
+
+
+			/*!
+			 * @brief infoSection Getter function of all the data contained in the information section.
+			 * @return Byte array
 			 */
 			QByteArray infoSection() const;
 
 		private:
+			/*!
+			 * @brief getByteString Getter of byte string.
+			 * @param byteString
+			 * @return
+			 */
 			bool getByteString(QByteArray *byteString);
 
 			bool getInteger(qint64 *integer);

@@ -1,15 +1,23 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.21)
 PROJECT(uTorrent)
 
-STRING(APPEND LEGAL_COPYRIGHT "© Haidar Ibo <haidaribo@protonmail.com>")
+STRING(APPEND LEGAL_COPYRIGHT "© Haidar Ibo <HaidarIbo@protonmail.com>")
 STRING(APPEND OWNER "Haidar Ibo")
 STRING(APPEND WEB "n.A.")
 STRING(APPEND DESCRIPTION "Torrent Client and Server using complex TCP/IP operations.")
 STRING(TIMESTAMP TODAY "%Y-%m-%d")
 
+
+SET(CMAKE_PREFIX_PATH "E:/Qt/6.2.4/msvc2019_64")
+SET(BUILD_SHARED_LIBS TRUE)
+SET(CMAKE_INCLUDE_CURRENT_DIR ON)
+SET(CMAKE_AUTOUIC ON)
+SET(CMAKE_AUTOMOC ON)
+SET(CMAKE_AUTORCC ON)
 SET(CMAKE_CXX_STANDARD 20)
-SET(CMAKE_PREFIX_PATH "E:/Qt/5.15.2/msvc2019_64")
-SET(BUILD_SHARED_LIBS FALSE)
+SET(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+
 
 # Require certain CMake version, this is also used internally to globally set CMake policies
 MESSAGE(STATUS "CMake v${CMAKE_VERSION} found on ${CMAKE_SYSTEM} ${CMAKE_SYSTEM_PROCESSOR} (${CMAKE_GENERATOR})")
@@ -21,8 +29,9 @@ ELSE ()
     MESSAGE(INFO "Please note that your operating system is not officially supported!")
 ENDIF ()
 
+
 # Version information
-SET(MODULE_NAME QLinac)
+SET(MODULE_NAME uTorrent)
 SET(${MODULE_NAME}_MAJOR_VERSION 1)
 SET(${MODULE_NAME}_MINOR_VERSION 0)
 SET(${MODULE_NAME}_PATCH_VERSION 0)
@@ -40,11 +49,12 @@ ADD_DEFINITIONS(-D${MODULE_NAME}_VERSION=${${MODULE_NAME}_VERSION})
 SET(SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src CACHE INTERNAL "")
 SET(BINARY_DIR ${CMAKE_CURRENT_BINARY_DIR}/src CACHE INTERNAL "")
 
+
 OPTION(BUILD_TESTING "Build ${PROJECT_NAME} unit tests for regression tests and automatic software verification." ON)
 SET(TESTING_ENABLED OFF)
 
 
-OPTION(BUILD_API_DOCS "Generate API docs using Doxygen." OFF)
+OPTION(BUILD_API_DOCS "Generate API docs using Doxygen." ON)
 IF (BUILD_API_DOCS)
     FIND_PACKAGE(Doxygen)
     IF (NOT DOXYGEN_FOUND)
@@ -99,119 +109,166 @@ LIST(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}")
 LIST(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/CMakeModules")
 INCLUDE(WinQtDeploy)
 
+SET(Qt_Version "6")
 
-FIND_PACKAGE(Qt5Core REQUIRED)
-FIND_PACKAGE(Qt5Widgets REQUIRED)
-FIND_PACKAGE(Qt5Network REQUIRED)
-FIND_PACKAGE(Qt5Test REQUIRED)
-FIND_PACKAGE(Qt5Sql REQUIRED)
-FIND_PACKAGE(Qt5Xml REQUIRED)
-FIND_PACKAGE(Qt5LinguistTools REQUIRED)
-FIND_PACKAGE(Qt5Designer REQUIRED)
-FIND_PACKAGE(Qt5Concurrent REQUIRED)
-FIND_PACKAGE(Qt5OpenGL REQUIRED)
-FIND_PACKAGE(Qt5Charts REQUIRED)
-FIND_PACKAGE(Qt5WebEngineWidgets REQUIRED)
-SET(QT_LIBRARIES Qt5::Core Qt5::Widgets Qt5::Network Qt5::Test Qt5::Sql Qt5::Xml Qt5::Designer Qt5::Concurrent
-        Qt5::OpenGL Qt5::Charts Qt5::WebEngineCore Qt5::WebEngineWidgets)
-IF (WIN32)
-    SET(QT_LIBRARIES ${QT_LIBRARIES} Qt5::WinMain)
-ENDIF ()
-SET(QT5_DIR "" CACHE PATH "Qt5 Directory that contains Qt5Core.dll")
+FIND_PACKAGE(Qt${Qt_Version}Core REQUIRED)
+FIND_PACKAGE(Qt${Qt_Version}Widgets REQUIRED)
+FIND_PACKAGE(Qt${Qt_Version}Network REQUIRED)
+FIND_PACKAGE(Qt${Qt_Version}Sql REQUIRED)
+FIND_PACKAGE(Qt${Qt_Version}Xml REQUIRED)
+FIND_PACKAGE(Qt${Qt_Version}Concurrent REQUIRED)
+FIND_PACKAGE(Qt${Qt_Version}OpenGL REQUIRED)
+FIND_PACKAGE(Qt${Qt_Version}Charts REQUIRED)
+FIND_PACKAGE(Qt${Qt_Version}Help REQUIRED)
+FIND_PACKAGE(Qt${Qt_Version}PrintSupport REQUIRED)
 
-INCLUDE_DIRECTORIES(${QT5_DIR})
-SET(CMAKE_PREFIX_PATH ${QT5_DIR})
+SET(QT_LIBRARIES Qt${Qt_Version}::Core Qt${Qt_Version}::Widgets Qt${Qt_Version}::Network
+        Qt${Qt_Version}::Sql Qt${Qt_Version}::Xml Qt${Qt_Version}::Concurrent
+        Qt${Qt_Version}::Charts Qt${Qt_Version}::Help Qt${Qt_Version}::PrintSupport)
+
+SET(QT${Qt_Version}_DIR "" CACHE PATH "Qt${Qt_Version} Directory that contains Qt${Qt_Version}Core.dll")
+
+INCLUDE_DIRECTORIES(${QT${Qt_Version}_DIR})
+SET(CMAKE_PREFIX_PATH ${QT${Qt_Version}_DIR})
+
 
 SET(QT_QTGUI_LIBRARIES
-        ${Qt5Gui_LIBRARIES}
-        ${Qt5Widgets_LIBRARIES}
-        ${Qt5PrintSupport_LIBRARIES}
-        ${Qt5Svg_LIBRARIES}
-        ${Qt5Designer_LIBRARIES}
-        ${QtWebEngineWidgets_LIBRARIES}
+        ${Qt${Qt_Version}Gui_LIBRARIES}
+        ${Qt${Qt_Version}Widgets_LIBRARIES}
+        ${Qt${Qt_Version}PrintSupport_LIBRARIES}
+        ${Qt${Qt_Version}Svg_LIBRARIES}
         )
 SET(QT_INCLUDES
-        ${Qt5Gui_INCLUDE_DIRS}
-        ${Qt5Widgets_INCLUDE_DIRS}
-        ${Qt5PrintSupport_INCLUDE_DIRS}
-        ${Qt5Svg_INCLUDE_DIRS}
-        ${Qt5Designer_INCLUDE_DIRS}
-        ${Qt5Concurrent_INCLUDE_DIRS}
-        ${Qt5OpenGL_INCLUDE_DIRS}
+        ${Qt${Qt_Version}Gui_INCLUDE_DIRS}
+        ${Qt${Qt_Version}Widgets_INCLUDE_DIRS}
+        ${Qt${Qt_Version}PrintSupport_INCLUDE_DIRS}
+        ${Qt${Qt_Version}Svg_INCLUDE_DIRS}
+        ${Qt${Qt_Version}Concurrent_INCLUDE_DIRS}
+        ${Qt${Qt_Version}OpenGL_INCLUDE_DIRS}
         )
+
 SET(QT_QTGUI_LIBRARY ${QT_QTGUI_LIBRARIES})
 SET(_qt_modules
         Core
-        #Declarative
         Widgets
         Gui
-        # Script
-        # ScriptTools
-        #DBus
         Network
-        Test
-        #Designer
         Concurrent
-        #Xml
-        #UiTools
-        #Qml
-        #Quick
-        #WebKit
-        #WebKitWidgets
-        # Qt5QuickCompiler
-        # Qt5QmlImportScanner
+        Xml
         Sql
-        #OpenGL
-        # Charts
-        #WebEngineWidgets
+        OpenGL
+        Charts
         )
-
 FOREACH (_module ${_qt_modules})
     STRING(TOUPPER ${_module} _module_upper)
-    SET(QT_QT${_module_upper}_LIBRARIES ${Qt5${_module}_LIBRARIES})
+    SET(QT_QT${_module_upper}_LIBRARIES ${Qt${Qt_Version}${_module}_LIBRARIES})
     SET(QT_QT${_module_upper}_LIBRARY ${QT_QT${_module_upper}_LIBRARIES})
-    LIST(APPEND QT_INCLUDES ${Qt5${_module}_INCLUDE_DIRS})
-    SET(QT_QT${_module_upper}_FOUND ${Qt5${_module}_FOUND})
+    LIST(APPEND QT_INCLUDES ${Qt${Qt_Version}${_module}_INCLUDE_DIRS})
+    SET(QT_QT${_module_upper}_FOUND ${Qt${Qt_Version}${_module}_FOUND})
 ENDFOREACH ()
 
-GET_TARGET_PROPERTY(QT_QMAKE_EXECUTABLE Qt5::qmake LOCATION)
-GET_TARGET_PROPERTY(QT_RCC_EXECUTABLE Qt5::rcc LOCATION)
-GET_TARGET_PROPERTY(QT_LRELEASE_EXECUTABLE Qt5::lrelease LOCATION)
+GET_TARGET_PROPERTY(QT_QMAKE_EXECUTABLE Qt${Qt_Version}::qmake LOCATION)
+GET_TARGET_PROPERTY(QT_RCC_EXECUTABLE Qt${Qt_Version}::rcc LOCATION)
+# GET_TARGET_PROPERTY(QT_LRELEASE_EXECUTABLE Qt${Qt_Version}::lrelease LOCATION)
+
 
 IF (NOT QT_TRANSLATIONS_DIR)
     FIND_PATH(QT_TRANSLATIONS_DIR "qttranslations/translations" HINT ${QT_QMAKE_EXECUTABLE})
 ENDIF ()
 
-IF (TARGET Qt5::uic)
-    GET_TARGET_PROPERTY(QT_UIC_EXECUTABLE Qt5::uic LOCATION)
+IF (TARGET Qt${Qt_Version}::uic)
+    GET_TARGET_PROPERTY(QT_UIC_EXECUTABLE Qt${Qt_Version}::uic LOCATION)
 ENDIF ()
-
 ADD_DEFINITIONS(-DQT_DISABLE_DEPRECATED_BEFORE=0)
 INCLUDE_DIRECTORIES(${QT_INCLUDES})
 
 
-SET(${PROJECT_NAME}_LINKED_LIST
+##
+## Compile the .rc.in (Resource Input) file with a custom command.
+##
+IF (WIN32)
+    SET(${PROJECT_NAME}_RC_RES ${CMAKE_CURRENT_BINARY_DIR}/CMakeFiles/${PROJECT_NAME}.dir/${PROJECT_NAME}.rc.res)
+    SET(${PROJECT_NAME}_RC_SRC ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}.rc)
+
+    CONFIGURE_FILE(
+            ${CMAKE_CURRENT_SOURCE_DIR}/${PROJECT_NAME}.rc.in
+            ${${PROJECT_NAME}_RC_SRC}
+            @ONLY
+    )
+
+    ADD_CUSTOM_TARGET(
+            ${PROJECT_NAME}_RCGEN
+            COMMAND ${CMAKE_RC_COMPILER} /fo ${${PROJECT_NAME}_RC_RES} ${${PROJECT_NAME}_RC_SRC}
+    )
+ENDIF (WIN32)
+
+
+SET(LINKED_LIST
         ${QT_LIBRARIES}
-        ${SOURCE_LIBRARY}
+        ${SourceLibrary}
         )
-qt5_add_resources(RESOURCE resources.qrc)
+
+IF (${Qt_Version} EQUAL "6")
+    qt_add_resources(RESOURCE resources.qrc)
+ELSE()
+    qt5_add_resources(RESOURCE resources.qrc)
+ENDIF()
 
 ADD_SUBDIRECTORY(${SOURCE_DIR})
 # ADD_SUBDIRECTORY(${BINARY_DIR})
 
-ADD_EXECUTABLE(${CMAKE_PROJECT_NAME} main.cpp
+## Include the Source Library
+INCLUDE_DIRECTORIES(${SOURCE_DIR})
+
+# targets
+EXPORT(TARGETS ${LIBRARIES}
+        FILE "${CMAKE_CURRENT_BINARY_DIR}/LibraryDepends.cmake")
+
+if(${Qt_Version} GREATER_EQUAL 6)
+    qt_add_executable(${CMAKE_PROJECT_NAME} main.cpp
         ${RESOURCE}
+        ${${PROJECT_NAME}_RC_SRC}
         )
+    # qt_create_translation(QM_FILES ${CMAKE_SOURCE_DIR})
+else()
+    add_executable(${CMAKE_PROJECT_NAME}
+            ${RESOURCE}
+            ${${PROJECT_NAME}_RC_SRC}
+            )
+    # qt5_create_translation(QM_FILES ${CMAKE_SOURCE_DIR})
+endif()
 
 TARGET_LINK_LIBRARIES(${PROJECT_NAME}
+        PRIVATE
         # ${QT_LIBRARIES}
-        ${${PROJECT_NAME}_LINKED_LIBS}
+        ${LINKED_LIST}
         )
+
+set_target_properties(${PROJECT_NAME} PROPERTIES
+        MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com
+        MACOSX_BUNDLE_BUNDLE_VERSION ${${MODULE_NAME}_VERSION}
+        MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
+        MACOSX_BUNDLE TRUE
+        WIN32_EXECUTABLE TRUE
+        )
+
+
+INSTALL(TARGETS ${PROJECT_NAME}
+        BUNDLE DESTINATION .
+        LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
+
+
+if(QT_VERSION_MAJOR EQUAL 6)
+    qt_finalize_executable(${PROJECT_NAME})
+endif()
+
+TARGET_INCLUDE_DIRECTORIES(uTorrentSrc PRIVATE .)
+
 SET_TARGET_PROPERTIES(${CMAKE_PROJECT_NAME} PROPERTIES LINKER_LANGUAGE CXX)
 SET_TARGET_PROPERTIES(${CMAKE_PROJECT_NAME} PROPERTIES COMPILE_FLAGS "-DSORRYCLS_STATIC_DEFINE")
 
 IF (UNIX)
-    SET_TARGET_PROPERTIES(${QLinac_EXE_NAME} PROPERTIES COMPILE_FLAGS "-DSORRYCLS_STATIC_DEFINE -DHAVE_CONFIG_H")
+    SET_TARGET_PROPERTIES(${PROJECT_NAME} PROPERTIES COMPILE_FLAGS "-DSORRYCLS_STATIC_DEFINE -DHAVE_CONFIG_H")
 ENDIF ()
 
 IF (WIN32)
