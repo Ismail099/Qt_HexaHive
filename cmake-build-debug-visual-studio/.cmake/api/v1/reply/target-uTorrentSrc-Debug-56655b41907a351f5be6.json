@@ -1,0 +1,884 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "src/uTorrentSrc.dll"
+		},
+		{
+			"path" : "src/uTorrentSrc.lib"
+		},
+		{
+			"path" : "src/uTorrentSrc.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"ADD_LIBRARY",
+			"TARGET_LINK_LIBRARIES",
+			"set_target_properties",
+			"include",
+			"FIND_PACKAGE",
+			"find_package",
+			"find_dependency",
+			"_qt_internal_find_dependencies",
+			"ADD_DEFINITIONS",
+			"TARGET_INCLUDE_DIRECTORIES",
+			"INCLUDE_DIRECTORIES"
+		],
+		"files" : 
+		[
+			"src/CMakeLists.txt",
+			"E:/Qt/6.2.4/msvc2019_64/lib/cmake/Qt6Network/Qt6NetworkTargets.cmake",
+			"E:/Qt/6.2.4/msvc2019_64/lib/cmake/Qt6Network/Qt6NetworkConfig.cmake",
+			"CMakeLists.txt",
+			"E:/Qt/6.2.4/msvc2019_64/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsVersionlessTargets.cmake",
+			"E:/Qt/6.2.4/msvc2019_64/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsConfig.cmake",
+			"C:/Program Files/JetBrains/CLion 2022.3.3/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeFindDependencyMacro.cmake",
+			"E:/Qt/6.2.4/msvc2019_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+			"E:/Qt/6.2.4/msvc2019_64/lib/cmake/Qt6Charts/Qt6ChartsDependencies.cmake",
+			"E:/Qt/6.2.4/msvc2019_64/lib/cmake/Qt6Charts/Qt6ChartsConfig.cmake",
+			"E:/Qt/6.2.4/msvc2019_64/lib/cmake/Qt6OpenGL/Qt6OpenGLVersionlessTargets.cmake",
+			"E:/Qt/6.2.4/msvc2019_64/lib/cmake/Qt6OpenGL/Qt6OpenGLConfig.cmake",
+			"E:/Qt/6.2.4/msvc2019_64/lib/cmake/Qt6Charts/Qt6ChartsTargets.cmake",
+			"E:/Qt/6.2.4/msvc2019_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake",
+			"E:/Qt/6.2.4/msvc2019_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake",
+			"E:/Qt/6.2.4/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake",
+			"E:/Qt/6.2.4/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake",
+			"E:/Qt/6.2.4/msvc2019_64/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake",
+			"E:/Qt/6.2.4/msvc2019_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake",
+			"E:/Qt/6.2.4/msvc2019_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake",
+			"E:/Qt/6.2.4/msvc2019_64/lib/cmake/Qt6PrintSupport/Qt6PrintSupportTargets.cmake",
+			"E:/Qt/6.2.4/msvc2019_64/lib/cmake/Qt6PrintSupport/Qt6PrintSupportConfig.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 22,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 49,
+				"parent" : 0
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 116,
+				"parent" : 3
+			},
+			{
+				"file" : 2,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 50,
+				"parent" : 5
+			},
+			{
+				"file" : 1,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 56,
+				"parent" : 7
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 121,
+				"parent" : 3
+			},
+			{
+				"file" : 9,
+				"parent" : 9
+			},
+			{
+				"command" : 3,
+				"file" : 9,
+				"line" : 40,
+				"parent" : 10
+			},
+			{
+				"file" : 8,
+				"parent" : 11
+			},
+			{
+				"command" : 7,
+				"file" : 8,
+				"line" : 96,
+				"parent" : 12
+			},
+			{
+				"command" : 6,
+				"file" : 7,
+				"line" : 14,
+				"parent" : 13
+			},
+			{
+				"command" : 5,
+				"file" : 6,
+				"line" : 47,
+				"parent" : 14
+			},
+			{
+				"file" : 5,
+				"parent" : 15
+			},
+			{
+				"command" : 3,
+				"file" : 5,
+				"line" : 53,
+				"parent" : 16
+			},
+			{
+				"file" : 4,
+				"parent" : 17
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 56,
+				"parent" : 18
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 120,
+				"parent" : 3
+			},
+			{
+				"file" : 11,
+				"parent" : 20
+			},
+			{
+				"command" : 3,
+				"file" : 11,
+				"line" : 53,
+				"parent" : 21
+			},
+			{
+				"file" : 10,
+				"parent" : 22
+			},
+			{
+				"command" : 2,
+				"file" : 10,
+				"line" : 56,
+				"parent" : 23
+			},
+			{
+				"command" : 3,
+				"file" : 9,
+				"line" : 50,
+				"parent" : 10
+			},
+			{
+				"file" : 12,
+				"parent" : 25
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 56,
+				"parent" : 26
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 115,
+				"parent" : 3
+			},
+			{
+				"file" : 14,
+				"parent" : 28
+			},
+			{
+				"command" : 3,
+				"file" : 14,
+				"line" : 50,
+				"parent" : 29
+			},
+			{
+				"file" : 13,
+				"parent" : 30
+			},
+			{
+				"command" : 2,
+				"file" : 13,
+				"line" : 56,
+				"parent" : 31
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 114,
+				"parent" : 3
+			},
+			{
+				"file" : 16,
+				"parent" : 33
+			},
+			{
+				"command" : 3,
+				"file" : 16,
+				"line" : 50,
+				"parent" : 34
+			},
+			{
+				"file" : 15,
+				"parent" : 35
+			},
+			{
+				"command" : 2,
+				"file" : 15,
+				"line" : 56,
+				"parent" : 36
+			},
+			{
+				"command" : 3,
+				"file" : 14,
+				"line" : 40,
+				"parent" : 29
+			},
+			{
+				"file" : 19,
+				"parent" : 38
+			},
+			{
+				"command" : 7,
+				"file" : 19,
+				"line" : 96,
+				"parent" : 39
+			},
+			{
+				"command" : 6,
+				"file" : 7,
+				"line" : 14,
+				"parent" : 40
+			},
+			{
+				"command" : 5,
+				"file" : 6,
+				"line" : 47,
+				"parent" : 41
+			},
+			{
+				"file" : 18,
+				"parent" : 42
+			},
+			{
+				"command" : 3,
+				"file" : 18,
+				"line" : 50,
+				"parent" : 43
+			},
+			{
+				"file" : 17,
+				"parent" : 44
+			},
+			{
+				"command" : 2,
+				"file" : 17,
+				"line" : 56,
+				"parent" : 45
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 123,
+				"parent" : 3
+			},
+			{
+				"file" : 21,
+				"parent" : 47
+			},
+			{
+				"command" : 3,
+				"file" : 21,
+				"line" : 50,
+				"parent" : 48
+			},
+			{
+				"file" : 20,
+				"parent" : 49
+			},
+			{
+				"command" : 2,
+				"file" : 20,
+				"line" : 56,
+				"parent" : 50
+			},
+			{
+				"command" : 8,
+				"file" : 3,
+				"line" : 182,
+				"parent" : 3
+			},
+			{
+				"command" : 8,
+				"file" : 3,
+				"line" : 41,
+				"parent" : 3
+			},
+			{
+				"command" : 8,
+				"file" : 3,
+				"line" : 42,
+				"parent" : 3
+			},
+			{
+				"command" : 8,
+				"file" : 3,
+				"line" : 43,
+				"parent" : 3
+			},
+			{
+				"command" : 8,
+				"file" : 3,
+				"line" : 45,
+				"parent" : 3
+			},
+			{
+				"command" : 8,
+				"file" : 3,
+				"line" : 44,
+				"parent" : 3
+			},
+			{
+				"command" : 9,
+				"file" : 3,
+				"line" : 265,
+				"parent" : 3
+			},
+			{
+				"command" : 10,
+				"file" : 3,
+				"line" : 183,
+				"parent" : 3
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd"
+				},
+				{
+					"fragment" : "-DSORRYCLS_STATIC_DEFINE"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Zc:__cplusplus"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-permissive-"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-utf-8"
+				},
+				{
+					"fragment" : "-std:c++20"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "QT_CHARTS_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_CONCURRENT_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 52,
+					"define" : "QT_DISABLE_DEPRECATED_BEFORE=0"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_HELP_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_OPENGLWIDGETS_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_OPENGL_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_PRINTSUPPORT_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_SQL_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_WIDGETS_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_XML_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "WIN32"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "WIN64"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "_ENABLE_EXTENDED_ALIGNED_STORAGE"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "_UNICODE"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "_WIN64"
+				},
+				{
+					"define" : "uTorrentSrc_EXPORTS"
+				},
+				{
+					"backtrace" : 53,
+					"define" : "uTorrent_MAJOR_VERSION=1"
+				},
+				{
+					"backtrace" : 54,
+					"define" : "uTorrent_MINOR_VERSION=0"
+				},
+				{
+					"backtrace" : 55,
+					"define" : "uTorrent_PATCH_VERSION=0"
+				},
+				{
+					"backtrace" : 56,
+					"define" : "uTorrent_RELEASE_DATE=\"2023-07-13\""
+				},
+				{
+					"backtrace" : 57,
+					"define" : "uTorrent_VERSION=1.0."
+				}
+			],
+			"includes" : 
+			[
+				{
+					"path" : "C:/Users/hedar/OneDrive/Desktop/C++/Networking/uTorrent/cmake-build-debug-visual-studio/src"
+				},
+				{
+					"path" : "C:/Users/hedar/OneDrive/Desktop/C++/Networking/uTorrent/src"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "C:/Users/hedar/OneDrive/Desktop/C++/Networking/uTorrent/cmake-build-debug-visual-studio/src/uTorrentSrc_autogen/include"
+				},
+				{
+					"backtrace" : 58,
+					"path" : "C:/Users/hedar/OneDrive/Desktop/C++/Networking/uTorrent/."
+				},
+				{
+					"backtrace" : 59,
+					"isSystem" : true,
+					"path" : "E:/Qt/6.2.4/msvc2019_64/include/QtGui"
+				},
+				{
+					"backtrace" : 59,
+					"isSystem" : true,
+					"path" : "E:/Qt/6.2.4/msvc2019_64/include"
+				},
+				{
+					"backtrace" : 59,
+					"isSystem" : true,
+					"path" : "E:/Qt/6.2.4/msvc2019_64/include/QtCore"
+				},
+				{
+					"backtrace" : 59,
+					"isSystem" : true,
+					"path" : "E:/Qt/6.2.4/msvc2019_64/include/QtWidgets"
+				},
+				{
+					"backtrace" : 59,
+					"isSystem" : true,
+					"path" : "E:/Qt/6.2.4/msvc2019_64/include/QtPrintSupport"
+				},
+				{
+					"backtrace" : 59,
+					"isSystem" : true,
+					"path" : "E:/Qt/6.2.4/msvc2019_64/include/QtConcurrent"
+				},
+				{
+					"backtrace" : 59,
+					"isSystem" : true,
+					"path" : "E:/Qt/6.2.4/msvc2019_64/include/QtOpenGL"
+				},
+				{
+					"backtrace" : 59,
+					"isSystem" : true,
+					"path" : "E:/Qt/6.2.4/msvc2019_64/include/QtNetwork"
+				},
+				{
+					"backtrace" : 59,
+					"isSystem" : true,
+					"path" : "E:/Qt/6.2.4/msvc2019_64/include/QtXml"
+				},
+				{
+					"backtrace" : 59,
+					"isSystem" : true,
+					"path" : "E:/Qt/6.2.4/msvc2019_64/include/QtSql"
+				},
+				{
+					"backtrace" : 59,
+					"isSystem" : true,
+					"path" : "E:/Qt/6.2.4/msvc2019_64/include/QtCharts"
+				},
+				{
+					"backtrace" : 59,
+					"isSystem" : true,
+					"path" : "E:/Qt/6.2.4/msvc2019_64/include/QtOpenGLWidgets"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "E:/Qt/6.2.4/msvc2019_64/mkspecs/win32-msvc"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "E:/Qt/6.2.4/msvc2019_64/include/QtHelp"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2,
+					2
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "uTorrentSrc_autogen::@145eef247bfb46b6828c"
+		},
+		{
+			"id" : "uTorrentSrc_autogen_timestamp_deps::@145eef247bfb46b6828c"
+		}
+	],
+	"id" : "uTorrentSrc::@145eef247bfb46b6828c",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\Qt\\6.2.4\\msvc2019_64\\lib\\Qt6Networkd.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\Qt\\6.2.4\\msvc2019_64\\lib\\Qt6Xmld.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\Qt\\6.2.4\\msvc2019_64\\lib\\Qt6Concurrentd.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\Qt\\6.2.4\\msvc2019_64\\lib\\Qt6Chartsd.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\Qt\\6.2.4\\msvc2019_64\\lib\\Qt6Helpd.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\Qt\\6.2.4\\msvc2019_64\\lib\\Qt6PrintSupportd.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "ws2_32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 19,
+				"fragment" : "E:\\Qt\\6.2.4\\msvc2019_64\\lib\\Qt6OpenGLWidgetsd.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 24,
+				"fragment" : "E:\\Qt\\6.2.4\\msvc2019_64\\lib\\Qt6OpenGLd.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 27,
+				"fragment" : "user32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\Qt\\6.2.4\\msvc2019_64\\lib\\Qt6Sqld.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\Qt\\6.2.4\\msvc2019_64\\lib\\Qt6Widgetsd.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 32,
+				"fragment" : "E:\\Qt\\6.2.4\\msvc2019_64\\lib\\Qt6Guid.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "E:\\Qt\\6.2.4\\msvc2019_64\\lib\\Qt6Cored.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 37,
+				"fragment" : "mpr.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 37,
+				"fragment" : "userenv.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 46,
+				"fragment" : "d3d11.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 46,
+				"fragment" : "dxgi.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 46,
+				"fragment" : "dxguid.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 51,
+				"fragment" : "comdlg32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 51,
+				"fragment" : "winspool.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "uTorrentSrc",
+	"nameOnDisk" : "uTorrentSrc.dll",
+	"paths" : 
+	{
+		"build" : "src",
+		"source" : "src"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				6,
+				7,
+				8,
+				9,
+				10,
+				12
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				11,
+				13
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				14
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-visual-studio/src/uTorrentSrc_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/MetaInformation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/BencodeParser.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Exceptions/UnImplementedException.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/PeerWireClient.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/AddTorrentForm.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/MetaInformation.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/BencodeParser.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/Exceptions/UnImplementedException.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/PeerWireClient.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/AddTorrentForm.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/AddTorrentForm.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-visual-studio/src/uTorrentSrc_autogen/include/ui_AddTorrentForm.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-visual-studio/src/uTorrentSrc_autogen/timestamp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-visual-studio/src/uTorrentSrc_autogen/timestamp.rule",
+			"sourceGroupIndex" : 3
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}
