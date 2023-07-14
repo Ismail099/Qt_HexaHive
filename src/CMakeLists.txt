@@ -3,18 +3,18 @@ SET(SourceLibrary uTorrentSrc)
 SET(SOURCE_FILES
         MetaInformation.cpp
         BencodeParser.cpp
-        Exceptions/UnImplementedException.cpp
+        exceptions/UnImplementedException.cpp
         PeerWireClient.cpp
-        AddTorrentForm.cpp
+        AddTorrentDialog.cpp
         )
 
 SET(HEADER_FILES
         MetaInformation.h
         BencodeParser.h
-        Exceptions/UnImplementedException.hpp
+        exceptions/UnImplementedException.hpp
         PeerWireClient.hpp
-        AddTorrentForm.hpp
-        AddTorrentForm.ui)
+        AddTorrentDialog.hpp
+        AddTorrentForm.ui utils/stylesheet.hpp utils/stylesheet.hpp)
 
 ##
 ## Shared Library

@@ -1,6 +1,3 @@
-# FIND_PACKAGE(Qt5Core REQUIRED)
-# GET_TARGET_PROPERTY(_qmake_executable Qt5::qmake IMPORTED_LOCATION)
-# GET_FILENAME_COMPONENT(_qt_bin_dir "${_qmake_executable}" DIRECTORY)
 SET(_qt_bin_dir "${CMAKE_PREFIX_PATH}/bin")
 
 MESSAGE(STATUS "WinQtDeploy_Path: ${_qt_bin_dir}")

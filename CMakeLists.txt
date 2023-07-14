@@ -1,30 +1,27 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.21)
 PROJECT(uTorrent)
 
-STRING(APPEND LEGAL_COPYRIGHT "© Haidar Ibo <HaidarIbo@protonmail.com>")
-STRING(APPEND OWNER "Haidar Ibo")
-STRING(APPEND WEB "n.A.")
-STRING(APPEND DESCRIPTION "Torrent Client and Server using complex TCP/IP operations.")
-STRING(TIMESTAMP TODAY "%Y-%m-%d")
-
-
 SET(CMAKE_PREFIX_PATH "E:/Qt/6.2.4/msvc2019_64")
 SET(BUILD_SHARED_LIBS TRUE)
 SET(CMAKE_INCLUDE_CURRENT_DIR ON)
 SET(CMAKE_AUTOUIC ON)
 SET(CMAKE_AUTOMOC ON)
 SET(CMAKE_AUTORCC ON)
-SET(CMAKE_CXX_STANDARD 20)
 SET(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-
+SET(CMAKE_CXX_STANDARD 20)
+# SET(CMAKE_PREFIX_PATH "E:/Qt/5.15.2/msvc2019_64")
 
 # Require certain CMake version, this is also used internally to globally set CMake policies
 MESSAGE(STATUS "CMake v${CMAKE_VERSION} found on ${CMAKE_SYSTEM} ${CMAKE_SYSTEM_PROCESSOR} (${CMAKE_GENERATOR})")
-IF (WIN32 OR UNIX)
-    CMAKE_MINIMUM_REQUIRED(VERSION 3.1 FATAL_ERROR)   # CMake v3.1 has response files incorporated
-    SET(CMAKE_CXX_USE_RESPONSE_FILE_FOR_LIBRARIES ON) # Forces the make file generator to use response files
+IF (WIN32)
+    CMAKE_MINIMUM_REQUIRED(VERSION 3.20.1 FATAL_ERROR)# CMake v3.1 has response files incoporated
+    # Forces the make file generator to use response files
+    SET(CMAKE_CXX_USE_RESPONSE_FILE_FOR_LIBRARIES ON)
     SET(CMAKE_CXX_USE_RESPONSE_FILE_FOR_INCLUDES ON)
+ELSEIF (UNIX)
+    # 2.8.7 released 2011-12-30 (required for 12.04)
+    CMAKE_MINIMUM_REQUIRED(VERSION 3.23.1 FATAL_ERROR)
 ELSE ()
     MESSAGE(INFO "Please note that your operating system is not officially supported!")
 ENDIF ()
@@ -238,10 +235,17 @@ else()
     # qt5_create_translation(QM_FILES ${CMAKE_SOURCE_DIR})
 endif()
 
+
+##
+## Breeze Themes
+##
+INCLUDE(BreezeThemes)
+
 TARGET_LINK_LIBRARIES(${PROJECT_NAME}
         PRIVATE
         # ${QT_LIBRARIES}
         ${LINKED_LIST}
+        breeze_themes
         )
 
 set_target_properties(${PROJECT_NAME} PROPERTIES
